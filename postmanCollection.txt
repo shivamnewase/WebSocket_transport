@@ -1,0 +1,60 @@
+URL :- ws://127.0.0.1:8080
+
+Message
+
+msg Type :- JSON
+-------------------------------------------------------------
+input :-
+{
+ "Type":"Subscribe"
+}
+
+output:-
+
+{"type":"Subscribe","status":"Subscribed","updatedAt":*****}
+
+----------------------------------------------------------------
+input :-
+{
+ "Type":"Unscubscribe"
+}
+
+output:-
+
+
+{"type":"Unscubscribe","status":"Unscubscribe","updatedAt":*****}
+
+
+------------------------------------------------------------------
+
+
+input :-
+{
+ "Type":"CountSubscribers"
+}
+
+output:-
+
+
+{"type":"CountSubscribers","count":"0","updatedAt":*****}
+
+-------------------------------------------------------------------------
+
+input :-
+{
+ "Type":"Error"
+}
+
+output:-
+{
+
+"type": Error,
+"error": "Bad formatted payload, non JSON",
+"updatedAt": ***
+
+}
+
+
+
+
+
